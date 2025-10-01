@@ -21,9 +21,7 @@ class DoubleValue extends $pb.GeneratedMessage with $mixin.DoubleValueMixin {
           const $core.bool.fromEnvironment('protobuf.omit_message_names')
               ? ''
               : 'google.protobuf'),
-      createEmptyInstance: create,
-      toProto3Json: $mixin.DoubleValueMixin.toProto3JsonHelper,
-      fromProto3Json: $mixin.DoubleValueMixin.fromProto3JsonHelper)
+      createEmptyInstance: create)
     ..a<$core.double>(
         1,
         const $core.bool.fromEnvironment('protobuf.omit_field_names')
@@ -91,8 +89,8 @@ class FloatValue extends $pb.GeneratedMessage with $mixin.FloatValueMixin {
               ? ''
               : 'google.protobuf'),
       createEmptyInstance: create,
-      toProto3Json: $mixin.FloatValueMixin.toProto3JsonHelper,
-      fromProto3Json: $mixin.FloatValueMixin.fromProto3JsonHelper)
+      
+      )
     ..a<$core.double>(
         1,
         const $core.bool.fromEnvironment('protobuf.omit_field_names')
@@ -160,8 +158,7 @@ class Int64Value extends $pb.GeneratedMessage with $mixin.Int64ValueMixin {
               ? ''
               : 'google.protobuf'),
       createEmptyInstance: create,
-      toProto3Json: $mixin.Int64ValueMixin.toProto3JsonHelper,
-      fromProto3Json: $mixin.Int64ValueMixin.fromProto3JsonHelper)
+)
     ..aInt64(
         1,
         const $core.bool.fromEnvironment('protobuf.omit_field_names')
@@ -227,9 +224,7 @@ class UInt64Value extends $pb.GeneratedMessage with $mixin.UInt64ValueMixin {
           const $core.bool.fromEnvironment('protobuf.omit_message_names')
               ? ''
               : 'google.protobuf'),
-      createEmptyInstance: create,
-      toProto3Json: $mixin.UInt64ValueMixin.toProto3JsonHelper,
-      fromProto3Json: $mixin.UInt64ValueMixin.fromProto3JsonHelper)
+      createEmptyInstance: create,)
     ..a<$fixnum.Int64>(
         1,
         const $core.bool.fromEnvironment('protobuf.omit_field_names')
@@ -297,9 +292,7 @@ class Int32Value extends $pb.GeneratedMessage with $mixin.Int32ValueMixin {
           const $core.bool.fromEnvironment('protobuf.omit_message_names')
               ? ''
               : 'google.protobuf'),
-      createEmptyInstance: create,
-      toProto3Json: $mixin.Int32ValueMixin.toProto3JsonHelper,
-      fromProto3Json: $mixin.Int32ValueMixin.fromProto3JsonHelper)
+      createEmptyInstance: create,)
     ..a<$core.int>(
         1,
         const $core.bool.fromEnvironment('protobuf.omit_field_names')
@@ -366,9 +359,7 @@ class UInt32Value extends $pb.GeneratedMessage with $mixin.UInt32ValueMixin {
           const $core.bool.fromEnvironment('protobuf.omit_message_names')
               ? ''
               : 'google.protobuf'),
-      createEmptyInstance: create,
-      toProto3Json: $mixin.UInt32ValueMixin.toProto3JsonHelper,
-      fromProto3Json: $mixin.UInt32ValueMixin.fromProto3JsonHelper)
+      createEmptyInstance: create,)
     ..a<$core.int>(
         1,
         const $core.bool.fromEnvironment('protobuf.omit_field_names')
@@ -435,9 +426,7 @@ class BoolValue extends $pb.GeneratedMessage with $mixin.BoolValueMixin {
           const $core.bool.fromEnvironment('protobuf.omit_message_names')
               ? ''
               : 'google.protobuf'),
-      createEmptyInstance: create,
-      toProto3Json: $mixin.BoolValueMixin.toProto3JsonHelper,
-      fromProto3Json: $mixin.BoolValueMixin.fromProto3JsonHelper)
+      createEmptyInstance: create,)
     ..aOB(
         1,
         const $core.bool.fromEnvironment('protobuf.omit_field_names')
@@ -503,9 +492,7 @@ class StringValue extends $pb.GeneratedMessage with $mixin.StringValueMixin {
           const $core.bool.fromEnvironment('protobuf.omit_message_names')
               ? ''
               : 'google.protobuf'),
-      createEmptyInstance: create,
-      toProto3Json: $mixin.StringValueMixin.toProto3JsonHelper,
-      fromProto3Json: $mixin.StringValueMixin.fromProto3JsonHelper)
+      createEmptyInstance: create,)
     ..aOS(
         1,
         const $core.bool.fromEnvironment('protobuf.omit_field_names')
@@ -571,9 +558,7 @@ class BytesValue extends $pb.GeneratedMessage with $mixin.BytesValueMixin {
           const $core.bool.fromEnvironment('protobuf.omit_message_names')
               ? ''
               : 'google.protobuf'),
-      createEmptyInstance: create,
-      toProto3Json: $mixin.BytesValueMixin.toProto3JsonHelper,
-      fromProto3Json: $mixin.BytesValueMixin.fromProto3JsonHelper)
+      createEmptyInstance: create,)
     ..a<$core.List<$core.int>>(
         1,
         const $core.bool.fromEnvironment('protobuf.omit_field_names')

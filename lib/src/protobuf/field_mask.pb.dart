@@ -20,9 +20,7 @@ class FieldMask extends $pb.GeneratedMessage with $mixin.FieldMaskMixin {
           const $core.bool.fromEnvironment('protobuf.omit_message_names')
               ? ''
               : 'google.protobuf'),
-      createEmptyInstance: create,
-      toProto3Json: $mixin.FieldMaskMixin.toProto3JsonHelper,
-      fromProto3Json: $mixin.FieldMaskMixin.fromProto3JsonHelper)
+      createEmptyInstance: create,)
     ..pPS(
         1,
         const $core.bool.fromEnvironment('protobuf.omit_field_names')

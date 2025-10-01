@@ -24,9 +24,7 @@ class Struct extends $pb.GeneratedMessage with $mixin.StructMixin {
           const $core.bool.fromEnvironment('protobuf.omit_message_names')
               ? ''
               : 'google.protobuf'),
-      createEmptyInstance: create,
-      toProto3Json: $mixin.StructMixin.toProto3JsonHelper,
-      fromProto3Json: $mixin.StructMixin.fromProto3JsonHelper)
+      createEmptyInstance: create,)
     ..m<$core.String, Value>(
         1,
         const $core.bool.fromEnvironment('protobuf.omit_field_names')
@@ -107,9 +105,7 @@ class Value extends $pb.GeneratedMessage with $mixin.ValueMixin {
           const $core.bool.fromEnvironment('protobuf.omit_message_names')
               ? ''
               : 'google.protobuf'),
-      createEmptyInstance: create,
-      toProto3Json: $mixin.ValueMixin.toProto3JsonHelper,
-      fromProto3Json: $mixin.ValueMixin.fromProto3JsonHelper)
+      createEmptyInstance: create,)
     ..oo(0, [1, 2, 3, 4, 5, 6])
     ..e<NullValue>(
         1,
@@ -295,9 +291,7 @@ class ListValue extends $pb.GeneratedMessage with $mixin.ListValueMixin {
           const $core.bool.fromEnvironment('protobuf.omit_message_names')
               ? ''
               : 'google.protobuf'),
-      createEmptyInstance: create,
-      toProto3Json: $mixin.ListValueMixin.toProto3JsonHelper,
-      fromProto3Json: $mixin.ListValueMixin.fromProto3JsonHelper)
+      createEmptyInstance: create)
     ..pc<Value>(
         1,
         const $core.bool.fromEnvironment('protobuf.omit_field_names')

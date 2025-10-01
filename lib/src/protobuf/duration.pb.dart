@@ -21,9 +21,7 @@ class Duration extends $pb.GeneratedMessage with $mixin.DurationMixin {
           const $core.bool.fromEnvironment('protobuf.omit_message_names')
               ? ''
               : 'google.protobuf'),
-      createEmptyInstance: create,
-      toProto3Json: $mixin.DurationMixin.toProto3JsonHelper,
-      fromProto3Json: $mixin.DurationMixin.fromProto3JsonHelper)
+      createEmptyInstance: create,)
     ..aInt64(
         1,
         const $core.bool.fromEnvironment('protobuf.omit_field_names')
