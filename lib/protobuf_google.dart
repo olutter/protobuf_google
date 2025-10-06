@@ -1,4 +1,4 @@
-library protobuf_google;
+library;
 
 export 'src/protobuf/any.pb.dart';
 export 'src/protobuf/any.pbenum.dart';

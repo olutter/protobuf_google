@@ -1,134 +1,124 @@
-///
-//  Generated code. Do not modify.
-//  source: google/protobuf/type.proto
+// This is a generated file - do not edit.
 //
-// @dart = 2.12
-// ignore_for_file: annotate_overrides,camel_case_types,unnecessary_const,non_constant_identifier_names,library_prefixes,unused_import,unused_shown_name,return_of_invalid_type,unnecessary_this,prefer_final_fields, constant_identifier_names
+// Generated from google/protobuf/type.proto.
 
-// ignore_for_file: UNDEFINED_SHOWN_NAME
+// @dart = 3.3
+
+// ignore_for_file: annotate_overrides, camel_case_types, comment_references
+// ignore_for_file: constant_identifier_names
+// ignore_for_file: curly_braces_in_flow_control_structures
+// ignore_for_file: deprecated_member_use_from_same_package, library_prefixes
+// ignore_for_file: non_constant_identifier_names
+
 import 'dart:core' as $core;
+
 import 'package:protobuf/protobuf.dart' as $pb;
 
+/// The syntax in which a protocol buffer element is defined.
 class Syntax extends $pb.ProtobufEnum {
-  static const Syntax SYNTAX_PROTO2 = Syntax._(
-      0,
-      const $core.bool.fromEnvironment('protobuf.omit_enum_names')
-          ? ''
-          : 'SYNTAX_PROTO2');
-  static const Syntax SYNTAX_PROTO3 = Syntax._(
-      1,
-      const $core.bool.fromEnvironment('protobuf.omit_enum_names')
-          ? ''
-          : 'SYNTAX_PROTO3');
+  /// Syntax `proto2`.
+  static const Syntax SYNTAX_PROTO2 =
+      Syntax._(0, _omitEnumNames ? '' : 'SYNTAX_PROTO2');
+
+  /// Syntax `proto3`.
+  static const Syntax SYNTAX_PROTO3 =
+      Syntax._(1, _omitEnumNames ? '' : 'SYNTAX_PROTO3');
+
+  /// Syntax `editions`.
+  static const Syntax SYNTAX_EDITIONS =
+      Syntax._(2, _omitEnumNames ? '' : 'SYNTAX_EDITIONS');
 
   static const $core.List<Syntax> values = <Syntax>[
     SYNTAX_PROTO2,
     SYNTAX_PROTO3,
+    SYNTAX_EDITIONS,
   ];
 
-  static final $core.Map<$core.int, Syntax> _byValue =
-      $pb.ProtobufEnum.initByValue(values);
-  static Syntax? valueOf($core.int value) => _byValue[value];
+  static final $core.List<Syntax?> _byValue =
+      $pb.ProtobufEnum.$_initByValueList(values, 2);
+  static Syntax? valueOf($core.int value) =>
+      value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const Syntax._($core.int v, $core.String n) : super(v, n);
+  const Syntax._(super.value, super.name);
 }
 
+/// Basic field types.
 class Field_Kind extends $pb.ProtobufEnum {
-  static const Field_Kind TYPE_UNKNOWN = Field_Kind._(
-      0,
-      const $core.bool.fromEnvironment('protobuf.omit_enum_names')
-          ? ''
-          : 'TYPE_UNKNOWN');
-  static const Field_Kind TYPE_DOUBLE = Field_Kind._(
-      1,
-      const $core.bool.fromEnvironment('protobuf.omit_enum_names')
-          ? ''
-          : 'TYPE_DOUBLE');
-  static const Field_Kind TYPE_FLOAT = Field_Kind._(
-      2,
-      const $core.bool.fromEnvironment('protobuf.omit_enum_names')
-          ? ''
-          : 'TYPE_FLOAT');
-  static const Field_Kind TYPE_INT64 = Field_Kind._(
-      3,
-      const $core.bool.fromEnvironment('protobuf.omit_enum_names')
-          ? ''
-          : 'TYPE_INT64');
-  static const Field_Kind TYPE_UINT64 = Field_Kind._(
-      4,
-      const $core.bool.fromEnvironment('protobuf.omit_enum_names')
-          ? ''
-          : 'TYPE_UINT64');
-  static const Field_Kind TYPE_INT32 = Field_Kind._(
-      5,
-      const $core.bool.fromEnvironment('protobuf.omit_enum_names')
-          ? ''
-          : 'TYPE_INT32');
-  static const Field_Kind TYPE_FIXED64 = Field_Kind._(
-      6,
-      const $core.bool.fromEnvironment('protobuf.omit_enum_names')
-          ? ''
-          : 'TYPE_FIXED64');
-  static const Field_Kind TYPE_FIXED32 = Field_Kind._(
-      7,
-      const $core.bool.fromEnvironment('protobuf.omit_enum_names')
-          ? ''
-          : 'TYPE_FIXED32');
-  static const Field_Kind TYPE_BOOL = Field_Kind._(
-      8,
-      const $core.bool.fromEnvironment('protobuf.omit_enum_names')
-          ? ''
-          : 'TYPE_BOOL');
-  static const Field_Kind TYPE_STRING = Field_Kind._(
-      9,
-      const $core.bool.fromEnvironment('protobuf.omit_enum_names')
-          ? ''
-          : 'TYPE_STRING');
-  static const Field_Kind TYPE_GROUP = Field_Kind._(
-      10,
-      const $core.bool.fromEnvironment('protobuf.omit_enum_names')
-          ? ''
-          : 'TYPE_GROUP');
-  static const Field_Kind TYPE_MESSAGE = Field_Kind._(
-      11,
-      const $core.bool.fromEnvironment('protobuf.omit_enum_names')
-          ? ''
-          : 'TYPE_MESSAGE');
-  static const Field_Kind TYPE_BYTES = Field_Kind._(
-      12,
-      const $core.bool.fromEnvironment('protobuf.omit_enum_names')
-          ? ''
-          : 'TYPE_BYTES');
-  static const Field_Kind TYPE_UINT32 = Field_Kind._(
-      13,
-      const $core.bool.fromEnvironment('protobuf.omit_enum_names')
-          ? ''
-          : 'TYPE_UINT32');
-  static const Field_Kind TYPE_ENUM = Field_Kind._(
-      14,
-      const $core.bool.fromEnvironment('protobuf.omit_enum_names')
-          ? ''
-          : 'TYPE_ENUM');
-  static const Field_Kind TYPE_SFIXED32 = Field_Kind._(
-      15,
-      const $core.bool.fromEnvironment('protobuf.omit_enum_names')
-          ? ''
-          : 'TYPE_SFIXED32');
-  static const Field_Kind TYPE_SFIXED64 = Field_Kind._(
-      16,
-      const $core.bool.fromEnvironment('protobuf.omit_enum_names')
-          ? ''
-          : 'TYPE_SFIXED64');
-  static const Field_Kind TYPE_SINT32 = Field_Kind._(
-      17,
-      const $core.bool.fromEnvironment('protobuf.omit_enum_names')
-          ? ''
-          : 'TYPE_SINT32');
-  static const Field_Kind TYPE_SINT64 = Field_Kind._(
-      18,
-      const $core.bool.fromEnvironment('protobuf.omit_enum_names')
-          ? ''
-          : 'TYPE_SINT64');
+  /// Field type unknown.
+  static const Field_Kind TYPE_UNKNOWN =
+      Field_Kind._(0, _omitEnumNames ? '' : 'TYPE_UNKNOWN');
+
+  /// Field type double.
+  static const Field_Kind TYPE_DOUBLE =
+      Field_Kind._(1, _omitEnumNames ? '' : 'TYPE_DOUBLE');
+
+  /// Field type float.
+  static const Field_Kind TYPE_FLOAT =
+      Field_Kind._(2, _omitEnumNames ? '' : 'TYPE_FLOAT');
+
+  /// Field type int64.
+  static const Field_Kind TYPE_INT64 =
+      Field_Kind._(3, _omitEnumNames ? '' : 'TYPE_INT64');
+
+  /// Field type uint64.
+  static const Field_Kind TYPE_UINT64 =
+      Field_Kind._(4, _omitEnumNames ? '' : 'TYPE_UINT64');
+
+  /// Field type int32.
+  static const Field_Kind TYPE_INT32 =
+      Field_Kind._(5, _omitEnumNames ? '' : 'TYPE_INT32');
+
+  /// Field type fixed64.
+  static const Field_Kind TYPE_FIXED64 =
+      Field_Kind._(6, _omitEnumNames ? '' : 'TYPE_FIXED64');
+
+  /// Field type fixed32.
+  static const Field_Kind TYPE_FIXED32 =
+      Field_Kind._(7, _omitEnumNames ? '' : 'TYPE_FIXED32');
+
+  /// Field type bool.
+  static const Field_Kind TYPE_BOOL =
+      Field_Kind._(8, _omitEnumNames ? '' : 'TYPE_BOOL');
+
+  /// Field type string.
+  static const Field_Kind TYPE_STRING =
+      Field_Kind._(9, _omitEnumNames ? '' : 'TYPE_STRING');
+
+  /// Field type group. Proto2 syntax only, and deprecated.
+  static const Field_Kind TYPE_GROUP =
+      Field_Kind._(10, _omitEnumNames ? '' : 'TYPE_GROUP');
+
+  /// Field type message.
+  static const Field_Kind TYPE_MESSAGE =
+      Field_Kind._(11, _omitEnumNames ? '' : 'TYPE_MESSAGE');
+
+  /// Field type bytes.
+  static const Field_Kind TYPE_BYTES =
+      Field_Kind._(12, _omitEnumNames ? '' : 'TYPE_BYTES');
+
+  /// Field type uint32.
+  static const Field_Kind TYPE_UINT32 =
+      Field_Kind._(13, _omitEnumNames ? '' : 'TYPE_UINT32');
+
+  /// Field type enum.
+  static const Field_Kind TYPE_ENUM =
+      Field_Kind._(14, _omitEnumNames ? '' : 'TYPE_ENUM');
+
+  /// Field type sfixed32.
+  static const Field_Kind TYPE_SFIXED32 =
+      Field_Kind._(15, _omitEnumNames ? '' : 'TYPE_SFIXED32');
+
+  /// Field type sfixed64.
+  static const Field_Kind TYPE_SFIXED64 =
+      Field_Kind._(16, _omitEnumNames ? '' : 'TYPE_SFIXED64');
+
+  /// Field type sint32.
+  static const Field_Kind TYPE_SINT32 =
+      Field_Kind._(17, _omitEnumNames ? '' : 'TYPE_SINT32');
+
+  /// Field type sint64.
+  static const Field_Kind TYPE_SINT64 =
+      Field_Kind._(18, _omitEnumNames ? '' : 'TYPE_SINT64');
 
   static const $core.List<Field_Kind> values = <Field_Kind>[
     TYPE_UNKNOWN,
@@ -152,34 +142,31 @@ class Field_Kind extends $pb.ProtobufEnum {
     TYPE_SINT64,
   ];
 
-  static final $core.Map<$core.int, Field_Kind> _byValue =
-      $pb.ProtobufEnum.initByValue(values);
-  static Field_Kind? valueOf($core.int value) => _byValue[value];
+  static final $core.List<Field_Kind?> _byValue =
+      $pb.ProtobufEnum.$_initByValueList(values, 18);
+  static Field_Kind? valueOf($core.int value) =>
+      value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const Field_Kind._($core.int v, $core.String n) : super(v, n);
+  const Field_Kind._(super.value, super.name);
 }
 
+/// Whether a field is optional, required, or repeated.
 class Field_Cardinality extends $pb.ProtobufEnum {
-  static const Field_Cardinality CARDINALITY_UNKNOWN = Field_Cardinality._(
-      0,
-      const $core.bool.fromEnvironment('protobuf.omit_enum_names')
-          ? ''
-          : 'CARDINALITY_UNKNOWN');
-  static const Field_Cardinality CARDINALITY_OPTIONAL = Field_Cardinality._(
-      1,
-      const $core.bool.fromEnvironment('protobuf.omit_enum_names')
-          ? ''
-          : 'CARDINALITY_OPTIONAL');
-  static const Field_Cardinality CARDINALITY_REQUIRED = Field_Cardinality._(
-      2,
-      const $core.bool.fromEnvironment('protobuf.omit_enum_names')
-          ? ''
-          : 'CARDINALITY_REQUIRED');
-  static const Field_Cardinality CARDINALITY_REPEATED = Field_Cardinality._(
-      3,
-      const $core.bool.fromEnvironment('protobuf.omit_enum_names')
-          ? ''
-          : 'CARDINALITY_REPEATED');
+  /// For fields with unknown cardinality.
+  static const Field_Cardinality CARDINALITY_UNKNOWN =
+      Field_Cardinality._(0, _omitEnumNames ? '' : 'CARDINALITY_UNKNOWN');
+
+  /// For optional fields.
+  static const Field_Cardinality CARDINALITY_OPTIONAL =
+      Field_Cardinality._(1, _omitEnumNames ? '' : 'CARDINALITY_OPTIONAL');
+
+  /// For required fields. Proto2 syntax only.
+  static const Field_Cardinality CARDINALITY_REQUIRED =
+      Field_Cardinality._(2, _omitEnumNames ? '' : 'CARDINALITY_REQUIRED');
+
+  /// For repeated fields.
+  static const Field_Cardinality CARDINALITY_REPEATED =
+      Field_Cardinality._(3, _omitEnumNames ? '' : 'CARDINALITY_REPEATED');
 
   static const $core.List<Field_Cardinality> values = <Field_Cardinality>[
     CARDINALITY_UNKNOWN,
@@ -188,9 +175,13 @@ class Field_Cardinality extends $pb.ProtobufEnum {
     CARDINALITY_REPEATED,
   ];
 
-  static final $core.Map<$core.int, Field_Cardinality> _byValue =
-      $pb.ProtobufEnum.initByValue(values);
-  static Field_Cardinality? valueOf($core.int value) => _byValue[value];
+  static final $core.List<Field_Cardinality?> _byValue =
+      $pb.ProtobufEnum.$_initByValueList(values, 3);
+  static Field_Cardinality? valueOf($core.int value) =>
+      value < 0 || value >= _byValue.length ? null : _byValue[value];
 
-  const Field_Cardinality._($core.int v, $core.String n) : super(v, n);
+  const Field_Cardinality._(super.value, super.name);
 }
+
+const $core.bool _omitEnumNames =
+    $core.bool.fromEnvironment('protobuf.omit_enum_names');
