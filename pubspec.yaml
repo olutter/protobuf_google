@@ -1,6 +1,6 @@
 name: protobuf_google
 description: Public interface definitions of Google APIs for Dart and gRPC.
-version: 1.0.0
+version: 1.0.1
 homepage: https://pwa.ir
 repository: https://github.com/xclud/dart_protobuf_google/
 
@@ -9,7 +9,7 @@ environment:
 
 dependencies:
   fixnum: ^1.1.1
-  protobuf: ">=4.0.0 <6.0.0"
+  protobuf: ^5.0.0
 
 dev_dependencies:
   test: ^1.26.0

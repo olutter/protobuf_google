@@ -1,3 +1,7 @@
+## 1.0.1
+
+* Updated to protobuf 5.0.0 and regenerate the code.
+
 ## 1.0.0
 
 * First version.
